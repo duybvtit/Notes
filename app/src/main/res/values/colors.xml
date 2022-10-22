@@ -6,7 +6,6 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
 
     <color name="e">#ff000000</color>
     <color name="f">#ffffffff</color>
@@ -152,7 +151,6 @@
     <color name="dl">#90000000</color>
     <color name="dm">#1f000000</color>
     <color name="dn">#90000000</color>
-    <color name="do">#de000000</color>
     <color name="dq">#303f9f</color>
     <color name="ds">#6f6f6f</color>
     <color name="dt">#ededed</color>
@@ -263,7 +261,6 @@
     <color name="ic">#f7f9de</color>
     <color name="id">#ebebeb</color>
     <color name="ie">#d6d6d6</color>
-    <color name="if">#c2c2c2</color>
     <color name="ig">#adadad</color>
     <color name="ih">#999999</color>
     <color name="ii">#858585</color>
