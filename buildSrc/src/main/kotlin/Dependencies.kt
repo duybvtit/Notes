@@ -47,6 +47,7 @@ object Deps {
         val annotation by lazy { "androidx.annotation:annotation:$${Versions.annotationVersion}" }
         val preferencesKTX by lazy { "androidx.preference:preference-ktx:${Versions.preferenceKtx}" }
         val swipeRefresh by lazy { "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayout}" }
+        val lifecycle by lazy {"androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"}
         val lifecycleKTX by lazy { "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExtensions}" }
         val lifecycleCommon by lazy { "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}" }
         val playCoreKTX by lazy { "com.google.android.play:core-ktx:${Versions.googleCoreKTX}" }

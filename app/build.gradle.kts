@@ -63,7 +63,7 @@ plugins {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.2.0"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
     packagingOptions {
         resources {
@@ -79,21 +79,17 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":core"))
+    implementation(project(":basic-feature"))
 
     implementation(Deps.appCompat)
     implementation(Deps.material)
     implementation(Deps.AndroidX.coreKTX)
 
-    // Integration with activities
-    implementation(Deps.ComposeLibs.composeActivity)
     // Compose Material Design
     implementation(Deps.ComposeLibs.material)
-    implementation(Deps.ComposeLibs.animation)
     implementation(Deps.ComposeLibs.tooling)
     implementation(Deps.ComposeLibs.toolingPreview)
-    implementation(Deps.ComposeLibs.ui)
-    // Integration with ViewModels
-    implementation(Deps.ComposeLibs.viewModel)
 
     // Hilt
     implementation(Deps.Hilt.hilt)
