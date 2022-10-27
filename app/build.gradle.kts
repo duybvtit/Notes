@@ -1,10 +1,10 @@
 plugins {
     id("com.android.application")
     id("kotlin-parcelize")
-    id("kotlin-kapt")
 //    id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
     kotlin("android")
+    id("kotlin-kapt")
 }
 
 @Suppress("UnstableApiUsage") android {

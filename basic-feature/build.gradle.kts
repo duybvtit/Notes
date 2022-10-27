@@ -4,8 +4,8 @@ import org.jetbrains.kotlin.kapt3.base.Kapt.kaptFlags
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("kotlin-kapt")
 }
 
 @Suppress("UnstableApiUsage") android {
@@ -65,6 +65,7 @@ dependencies {
     implementation(Deps.ComposeLibs.tooling)
     implementation(Deps.ComposeLibs.toolingPreview)
     implementation(Deps.ComposeLibs.ui)
+    implementation(Deps.ComposeLibs.constraintLayout)
     // Integration with ViewModels
     implementation(Deps.ComposeLibs.viewModel)
 

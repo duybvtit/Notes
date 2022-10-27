@@ -47,7 +47,7 @@ object Deps {
         val annotation by lazy { "androidx.annotation:annotation:$${Versions.annotationVersion}" }
         val preferencesKTX by lazy { "androidx.preference:preference-ktx:${Versions.preferenceKtx}" }
         val swipeRefresh by lazy { "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayout}" }
-        val lifecycle by lazy {"androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"}
+        val lifecycle by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}" }
         val lifecycleKTX by lazy { "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExtensions}" }
         val lifecycleCommon by lazy { "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}" }
         val playCoreKTX by lazy { "com.google.android.play:core-ktx:${Versions.googleCoreKTX}" }
@@ -113,6 +113,7 @@ object Deps {
         val ui by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
         val viewModel by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleViewModelCompose}" }
         val pager by lazy { "com.google.accompanist:accompanist-pager:${Versions.accompanist}" }
+        val systemUIController by lazy { "com.google.accompanist:accompanist-systemuicontroller:${Versions.accompanist}" }
         val pagerIndicator by lazy { "com.google.accompanist:accompanist-pager-indicators:${Versions.accompanist}" }
         val permissions by lazy { "com.google.accompanist:accompanist-permissions:${Versions.accompanist}" }
         val navigationAnimation by lazy { "com.google.accompanist:accompanist-navigation-animation:${Versions.accompanist}" }

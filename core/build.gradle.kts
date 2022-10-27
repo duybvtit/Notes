@@ -1,8 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("kotlin-kapt")
 }
 
 @Suppress("UnstableApiUsage") android {
@@ -52,6 +52,13 @@ plugins {
 }
 
 dependencies {
+
+    // Compose Material Design
+    implementation(Deps.ComposeLibs.material)
+    implementation(Deps.ComposeLibs.tooling)
+    implementation(Deps.ComposeLibs.toolingPreview)
+    implementation(Deps.ComposeLibs.systemUIController)
+    implementation(Deps.ComposeLibs.constraintLayout)
 
     // SquareUp
     implementation(Deps.SquareRemote.converterGson)
