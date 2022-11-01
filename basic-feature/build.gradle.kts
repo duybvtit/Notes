@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
-import org.jetbrains.kotlin.kapt3.base.Kapt.kaptFlags
 
 plugins {
     id("com.android.library")
@@ -57,25 +55,16 @@ plugins {
 dependencies {
     implementation(project(":core"))
 
-    // Integration with activities
-    implementation(Deps.ComposeLibs.composeActivity)
-    // Compose Material Design
-    implementation(Deps.ComposeLibs.material)
-    implementation(Deps.ComposeLibs.animation)
-    implementation(Deps.ComposeLibs.tooling)
-    implementation(Deps.ComposeLibs.toolingPreview)
-    implementation(Deps.ComposeLibs.ui)
-    implementation(Deps.ComposeLibs.constraintLayout)
-    // Integration with ViewModels
-    implementation(Deps.ComposeLibs.viewModel)
+    implementation(libs.bundles.compose)
+    implementation(libs.composeViewModel)
 
-    implementation(Deps.Hilt.hilt)
-    kapt(Deps.Hilt.kaptHilt)
-    implementation(Deps.Hilt.hiltNavigationCompose)
+    implementation(libs.hilt)
+    kapt(libs.hiltCompiler)
+    implementation(libs.hiltNavigation)
 
 
-    testImplementation(Deps.UnitTesting.testJUnit)
-    androidTestImplementation(Deps.UnitTesting.extJUnit)
-    androidTestImplementation(Deps.UnitTesting.espressoCore)
-    androidTestImplementation(Deps.ComposeLibs.testing)
+    testImplementation(libs.testJUnit)
+    androidTestImplementation(libs.extJUnit)
+    androidTestImplementation(libs.espressoCore)
+    androidTestImplementation(libs.testing)
 }

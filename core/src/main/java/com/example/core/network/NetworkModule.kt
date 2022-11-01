@@ -3,7 +3,6 @@ package com.example.core.network
 import com.example.core.BuildConfig
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.localebro.okhttpprofiler.OkHttpProfilerInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -54,7 +53,6 @@ object NetworkModule {
             val loggingInterceptor =
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
             okHttpClientBuilder.addInterceptor(loggingInterceptor)
-            okHttpClientBuilder.addInterceptor(OkHttpProfilerInterceptor())
         }
         return okHttpClientBuilder.build()
     }

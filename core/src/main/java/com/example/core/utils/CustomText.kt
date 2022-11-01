@@ -126,23 +126,19 @@ fun DialogText(
 }
 
 @Composable
-fun MediumText(
+fun CustomText(
     modifier: Modifier = Modifier,
     content: String,
-    fontSize: TextUnit,
+    style: TextStyle,
     color: Color = White,
     textAlign: TextAlign = TextAlign.Start
 ) {
     Text(
         text = content,
         modifier = modifier,
-        style = TextStyle(
-            fontFamily = spaceGrotesk,
-            fontWeight = FontWeight.Medium,
-            fontSize = fontSize,
-            color = color,
-            textAlign = textAlign
-        )
+        style = style,
+        color = color,
+        textAlign = textAlign
     )
 }
 

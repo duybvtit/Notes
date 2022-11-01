@@ -52,22 +52,18 @@ plugins {
 }
 
 dependencies {
-
     // Compose Material Design
-    implementation(Deps.ComposeLibs.material)
-    implementation(Deps.ComposeLibs.tooling)
-    implementation(Deps.ComposeLibs.toolingPreview)
-    implementation(Deps.ComposeLibs.systemUIController)
-    implementation(Deps.ComposeLibs.constraintLayout)
+    implementation(libs.bundles.compose)
 
     // SquareUp
-    implementation(Deps.SquareRemote.converterGson)
-    implementation(Deps.SquareRemote.okHttpLogging)
-    implementation(Deps.SquareRemote.okHttpProfiler)
+    implementation(libs.converterGson)
+    implementation(libs.okHTTPLogging)
 
-    implementation(Deps.Hilt.hilt)
-    kapt(Deps.Hilt.kaptHilt)
-    implementation(Deps.Hilt.hiltNavigationCompose)
 
-    implementation(Deps.AndroidX.lifecycle)
+    //Hilt
+    implementation(libs.hilt)
+    kapt(libs.hiltCompiler)
+    implementation(libs.hiltNavigation)
+
+    implementation(libs.lifecycle)
 }
