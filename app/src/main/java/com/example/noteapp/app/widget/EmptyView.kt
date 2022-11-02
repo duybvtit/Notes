@@ -1,4 +1,4 @@
-package com.example.basic_feature.widget
+package com.example.noteapp.presentation.widget
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement

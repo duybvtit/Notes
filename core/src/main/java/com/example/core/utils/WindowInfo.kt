@@ -40,3 +40,13 @@ data class WindowInfo(
         object Expanded : WindowType()
     }
 }
+
+@Composable
+fun GetScreenWidth(): Int {
+    return LocalConfiguration.current.screenWidthDp
+}
+
+@Composable
+fun GetScreenHeight(): Int {
+    return LocalConfiguration.current.screenHeightDp
+}

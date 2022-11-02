@@ -1,4 +1,4 @@
-package com.example.noteapp
+package com.example.noteapp.app
 
 import android.annotation.SuppressLint
 import android.app.Activity

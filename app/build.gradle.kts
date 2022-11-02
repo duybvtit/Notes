@@ -80,24 +80,22 @@ plugins {
 
 dependencies {
     implementation(project(":core"))
-    implementation(project(":basic-feature"))
-
+   
     implementation(Deps.appCompat)
     implementation(Deps.material)
     implementation(Deps.AndroidX.coreKTX)
 
-    // Compose Material Design
-    implementation(Deps.ComposeLibs.material)
-    implementation(Deps.ComposeLibs.tooling)
-    implementation(Deps.ComposeLibs.toolingPreview)
 
-    // Hilt
-    implementation(Deps.Hilt.hilt)
-    kapt(Deps.Hilt.kaptHilt)
-    implementation(Deps.Hilt.hiltNavigationCompose)
+    implementation(libs.bundles.compose)
+    implementation(libs.composeViewModel)
 
-    testImplementation(Deps.UnitTesting.testJUnit)
-    androidTestImplementation(Deps.UnitTesting.extJUnit)
-    androidTestImplementation(Deps.UnitTesting.espressoCore)
-    androidTestImplementation(Deps.ComposeLibs.testing)
+    implementation(libs.hilt)
+    kapt(libs.hiltCompiler)
+    implementation(libs.hiltNavigation)
+
+
+    testImplementation(libs.testJUnit)
+    androidTestImplementation(libs.extJUnit)
+    androidTestImplementation(libs.espressoCore)
+    androidTestImplementation(libs.testing)
 }
